@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LIUZHOU METALFUSION GROUP - Product categories, servo actuators, pumps, valves, and PVC procurement solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>LIUZHOU METALFUSION GROUP | Industrial Solutions</title>
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">MF</div>
+      <span class="logo-text">LIUZHOU <span>METALFUSION</span> GROUP</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="btn-nav">Get Quote</a>
+    </div>
+    <div class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Our Products</h1>
+    <p>Comprehensive range of industrial components sourced from trusted manufacturers across Asia.</p>
+  </div>
+</section>
+
+<section class="products-intro section">
+  <div class="container text-center">
+    <div class="products-filter">
+      <button class="filter-btn active" onclick="filterProducts('all',this)">All</button>
+      <button class="filter-btn" onclick="filterProducts('actuators',this)">Servo Actuators</button>
+      <button class="filter-btn" onclick="filterProducts('pumps',this)">Pumps &amp; Valves</button>
+      <button class="filter-btn" onclick="filterProducts('pvc',this)">PVC Products</button>
+    </div>
+    <div class="products-grid">
+      <div class="product-card" data-category="actuators">
+        <div class="product-card-img">&#9881;</div>
+        <div class="product-card-body">
+          <span class="tag">Servo Actuators</span>
+          <h3>AC Servo Motors</h3>
+          <p>High-torque AC servo motors from 200W to 15kW. Suitable for CNC machines, robotics, and precision positioning systems.</p>
+          <a href="contact.html" class="btn-sm">Inquire &rarr;</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="actuators">
+        <div class="product-card-img">&#9881;</div>
+        <div class="product-card-body">
+          <span class="tag">Servo Actuators</span>
+          <h3>Linear Actuators</h3>
+          <p>Electric linear actuators with ball screw and lead screw options. Stroke lengths from 50mm to 2000mm, precision up to 0.01mm.</p>
+          <a href="contact.html" class="btn-sm">Inquire &rarr;</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="actuators">
+        <div class="product-card-img">&#9881;</div>
+        <div class="product-card-body">
+          <span class="tag">Servo Actuators</span>
+          <h3>Servo Drivers &amp; Controllers</h3>
+          <p>Advanced servo drive systems supporting EtherCAT, CANopen, and pulse train control. Compact design with built-in safety functions.</p>
+          <a href="contact.html" class="btn-sm">Inquire &rarr;</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="pumps">
+        <div class="product-card-img">&#9968;</div>
+        <div class="product-card-body">
+          <span class="tag">Pumps &amp; Valves</span>
+          <h3>Centrifugal Pumps</h3>
+          <p>End suction, split case, and multistage centrifugal pumps for water supply, HVAC, and industrial process applications.</p>
+          <a href="contact.html" class="btn-sm">Inquire &rarr;</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="pumps">
+        <div class="product-card-img">&#9968;</div>
+        <div class="product-card-body">
+          <span class="tag">Pumps &amp; Valves</span>
+          <h3>Industrial Ball Valves</h3>
+          <p>Full port and reduced port ball valves in stainless steel, carbon steel, and brass. Sizes from 1/4" to 24". Pressure ratings up to 1500LB.</p>
+          <a href="contact.html" class="btn-sm">Inquire &rarr;</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="pumps">
+        <div class="product-card-img">&#9968;</div>
+        <div class="product-card-body">
+          <span class="tag">Pumps &amp; Valves</span>
+          <h3>Butterfly &amp; Gate Valves</h3>
+          <p>Wafer, lug, and flanged butterfly valves. Resilient seated gate valves for water and wastewater applications.</p>
+          <a href="contact.html" class="btn-sm">Inquire &rarr;</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="pumps">
+        <div class="product-card-img">&#9968;</div>
+        <div class="product-card-body">
+          <span class="tag">Pumps &amp; Valves</span>
+          <h3>Control Valves</h3>
+          <p>Globe-type control valves with pneumatic and electric actuators for precise flow regulation in process industries.</p>
+          <a href="contact.html" class="btn-sm">Inquire &rarr;</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="pvc">
+        <div class="product-card-img">&#9883;</div>
+        <div class="product-card-body">
+          <span class="tag">PVC Products</span>
+          <h3>PVC Pipes</h3>
+          <p>Schedule 40, 80, and pressure-rated PVC pipes in standard and custom lengths. Available in UPVC, CPVC, and modified grades.</p>
+          <a href="contact.html" class="btn-sm">Inquire &rarr;</a>
+        </div>
+      </div>
+      <div class="product-card" data-category="pvc">
+        <div class="product-card-img">&#9883;</div>
+        <div class="product-card-body">
+          <span class="tag">PVC Products</span>
+          <h3>PVC Fittings &amp; Valves</h3>
+          <p>Elbows, tees, couplings, unions, and ball valves in PVC. Chemical resistant and suitable for potable water systems.</p>
+          <a href="contact.html" class="btn-sm">Inquire &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text" style="color:#fff;font-weight:700;font-size:1.2rem;">LIUZHOU <span style="color:#7ba4d4;">METALFUSION</span> GROUP</span>
+        <p>Your trusted partner in industrial automation, fluid control, and engineering materials. Serving global industries with quality products and reliable supply chain solutions.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Products</h5>
+        <a href="products.html#actuators">Servo Actuators</a>
+        <a href="products.html#pumps">Pumps &amp; Valves</a>
+        <a href="products.html#pvc">PVC Products</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html">About Us</a>
+        <a href="about.html#team">Our Team</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a>Liuzhou, Guangxi, China</a>
+        <a>info@lzmfgroup.com</a>
+        <a>+86 772 1234 5678</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 LIUZHOU METALFUSION GROUP. All rights reserved.</span>
+      <span>Industrial Excellence Since 2010</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function filterProducts(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.product-card').forEach(c => {
+    c.style.display = (cat === 'all' || c.dataset.category === cat) ? 'block' : 'none';
+  });
+}
+</script>
+</body>
+</html>
